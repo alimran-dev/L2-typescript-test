@@ -9,3 +9,13 @@ const reverseString=(input: string): string=>{
   }
   return rev;
 }
+
+type StringOrNumber = string | number;
+const checkType=(input: StringOrNumber)=>{
+  if(typeof input === "string"){
+    return "String";
+  } else if(typeof input === "number"){
+    return "Number";
+  }
+}
+
